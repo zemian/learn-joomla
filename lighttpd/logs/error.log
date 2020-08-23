@@ -1,0 +1,6 @@
+2020-08-23 18:10:59: (server.c.1488) server started (lighttpd/1.4.55) 
+2020-08-23 18:15:05: (server.c.936) [note] graceful shutdown started 
+2020-08-23 18:15:05: (server.c.1970) server stopped by UID = 501 PID = 29990 
+2020-08-23 18:15:06: (server.c.1488) server started (lighttpd/1.4.55) 
+2020-08-23 18:16:00: (server.c.936) [note] graceful shutdown started 
+2020-08-23 18:16:00: (server.c.1970) server stopped by UID = 501 PID = 29990 
