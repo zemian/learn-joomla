@@ -6,3 +6,5 @@
 	GRANT ALL PRIVILEGES ON joomla351.* TO 'zemian'@'localhost';
 	FLUSH PRIVILEGES;
 	```
+
+## This version of Joomla requires PHP 5.6.40
