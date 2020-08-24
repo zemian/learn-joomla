@@ -7,6 +7,16 @@
 	FLUSH PRIVILEGES;
 	```
 
+### How to backup and restore DB for local dev
+
+```
+# Backup
+mysqldump --single-transaction --quick --no-autocommit --extended-insert=false -u zemian -p joomla351 > joomla351-`date +%s`-dump.sql
+
+# Restore
+mysql -f -u zemian -p joomla351 < joomla351-<date>-dump.sql
+```
+
 ## How to run
 
 ```
