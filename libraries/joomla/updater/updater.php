@@ -168,13 +168,15 @@ class JUpdater extends JAdapter
 
 			if (is_array($update_result))
 			{
-				if (array_key_exists('update_sites', $update_result) && count($update_result['update_sites']))
+				// Zemian fix: count() is not Countable Warning - prevented installation
+				// this error occur only for PHP 7.4.9  with Joomla 3.5.1
+				if (array_key_exists('update_sites', $update_result) && $update_result['update_sites'] && count($update_result['update_sites']))
 				{
 					$results = JArrayHelper::arrayUnique(array_merge($results, $update_result['update_sites']));
 					$result_count = count($results);
 				}
 
-				if (array_key_exists('updates', $update_result) && count($update_result['updates']))
+				if (array_key_exists('updates', $update_result) && $update_result['updates'] && count($update_result['updates']))
 				{
 					for ($k = 0, $count = count($update_result['updates']); $k < $count; $k++)
 					{

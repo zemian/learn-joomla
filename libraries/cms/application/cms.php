@@ -457,7 +457,9 @@ class JApplicationCms extends JApplicationWeb
 			$session = JFactory::getSession();
 			$sessionQueue = $session->get('application.queue');
 
-			if (count($sessionQueue))
+			// Zemian fix: count() is not Countable Warning - prevented installation
+			// this error occur only for PHP 7.4.9  with Joomla 3.5.1
+			if ($sessionQueue && count($sessionQueue))
 			{
 				$this->_messageQueue = $sessionQueue;
 				$session->set('application.queue', null);
