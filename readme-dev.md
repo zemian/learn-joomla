@@ -7,9 +7,14 @@
 	FLUSH PRIVILEGES;
 	```
 
-## This version of Joomla 3.5.1 does not work with PHP 7.4.9
+## Installation notes with PHP 7.4.9
 
-* Try with PHP 5.6.40, but it is not able to compile under MacOSX10.15!
+* The default Joomla 3.5.1 will not work with PHP 7.4.9. Had to fix few Joomla source files to get it installed.
+* Default login: admin/test123
+
+## Working Joomla 3.5.1 older versio of PHP
+
+* Tried with PHP 5.6.40, but it is not able to compile under MacOSX10.15!
 
 ```
 ./configure --prefix=/usr/local/php-5.6.40 --with-iconv=/usr/local/opt/libiconv --enable-sockets --with-mysqli=mysqlnd --with-zlib=/usr/local/opt/zlib
@@ -24,7 +29,7 @@ int readdir_r(DIR *, struct dirent *, struct dirent **) __DARWIN_INODE64(readdir
 ^
 ```
 
-* Try with PHP 7.0.33
+* Tried with PHP 7.0.33
 
 ```
 ./configure --prefix=/usr/local/php-7.0.33 --with-iconv=/usr/local/opt/libiconv --enable-sockets --with-mysqli=mysqlnd --with-zlib=/usr/local/opt/zlib
