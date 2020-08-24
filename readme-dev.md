@@ -7,10 +7,29 @@
 	FLUSH PRIVILEGES;
 	```
 
+## How to run
+
+```
+lighttpd -D -f lighttpd/lighttpd-php.conf
+open http://localhost:3000/adminstrator
+```
+
 ## Installation notes with PHP 7.4.9
 
 * The default Joomla 3.5.1 will not work with PHP 7.4.9. Had to fix few Joomla source files to get it installed.
+
+	- libraries/cms/application/cms.php
+	- libraries/joomla/updater/updater.
+
+		```
+		// Zemian fix: count() is not Countable Warning - prevented installation
+		// this error occur only for PHP 7.4.9  with Joomla 3.5.1
+		if ($sessionQueue && count($sessionQueue))
+		```
+
 * Default login: admin/test123
+
+* Note that the `installation` folder has been removed as part of the setup.
 
 ## Working Joomla 3.5.1 older versio of PHP
 
