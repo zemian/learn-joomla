@@ -2,7 +2,7 @@
 
 ```
 CREATE USER 'zemian'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test123';
-CREATE DATABASE joomla351db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE joomla351db CHARACTER SET utf8 COLLATE utf8_general_ci;
 GRANT ALL PRIVILEGES ON joomla351db.* TO 'zemian'@'localhost';
 FLUSH PRIVILEGES;
 ```
