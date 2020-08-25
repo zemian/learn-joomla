@@ -1,20 +1,20 @@
 ## DB Setup
 
-	```
-	CREATE USER 'zemian'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test123';
-	CREATE DATABASE joomla351 CHARACTER SET utf8 COLLATE utf8_general_ci;
-	GRANT ALL PRIVILEGES ON joomla351.* TO 'zemian'@'localhost';
-	FLUSH PRIVILEGES;
-	```
+```
+CREATE USER 'zemian'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test123';
+CREATE DATABASE joomla351db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+GRANT ALL PRIVILEGES ON joomla351db.* TO 'zemian'@'localhost';
+FLUSH PRIVILEGES;
+```
 
 ### How to backup and restore DB for local dev
 
 ```
 # Backup
-mysqldump --single-transaction --quick --no-autocommit --extended-insert=false -u zemian -p joomla351 > joomla351-`date +%s`-dump.sql
+mysqldump --single-transaction --quick --no-autocommit --extended-insert=false -u zemian -p joomla351db > joomla351db-`date +%s`-dump.sql
 
 # Restore
-mysql -f -u zemian -p joomla351 < joomla351-<date>-dump.sql
+mysql -f -u zemian -p joomla351db < joomla351db-<date>-dump.sql
 ```
 
 ## How to run
@@ -24,12 +24,28 @@ lighttpd -D -f lighttpd/lighttpd-php.conf
 open http://localhost:3000/adminstrator
 ```
 
+## Installation Joomla 3.5.1 with PHP 5.6.40
+
+The Joomla 3.5.1 has many extensions that still uses older verison of PHP 5.
+
+* Default login: admin/test123
+
+* Admin: http://localhost:3000/administrator/
+
+* Note that the `installation` folder has been removed as part of the setup.
+
+
 ## Installation notes with PHP 7.4.9
 
 * The default Joomla 3.5.1 will not work with PHP 7.4.9. Had to fix few Joomla source files to get it installed.
+	
+	- Example of error: 
 
-	- libraries/cms/application/cms.php
-	- libraries/joomla/updater/updater.
+		```
+		Warning: count(): Parameter must be an array or an object that implements Countable in /Users/zedeng/src/zemian/universalcop-com/unicop-joomla-site/libraries/cms/application/cms.php on line 460
+		```
+	
+	- You can fix it by doing param check before pass to `count()` like this:
 
 		```
 		// Zemian fix: count() is not Countable Warning - prevented installation
@@ -37,39 +53,9 @@ open http://localhost:3000/adminstrator
 		if ($sessionQueue && count($sessionQueue))
 		```
 
-* Default login: admin/test123
+	- Files needs to be fixed:
 
-* Note that the `installation` folder has been removed as part of the setup.
+		* `libraries/cms/application/cms.php`
+		* `libraries/joomla/updater/updater.php`
 
-## Working Joomla 3.5.1 older versio of PHP
-
-* Tried with PHP 5.6.40, but it is not able to compile under MacOSX10.15!
-
-```
-./configure --prefix=/usr/local/php-5.6.40 --with-iconv=/usr/local/opt/libiconv --enable-sockets --with-mysqli=mysqlnd --with-zlib=/usr/local/opt/zlib
-
-...
-/Users/zedeng/src/zemian/php-5.6.40/main/reentrancy.c:139:23: error: too few arguments to function call, expected 3,
-      have 2
-        readdir_r(dirp, entry);
-        ~~~~~~~~~            ^
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/dirent.h:110:1: note: 'readdir_r' declared here
-int readdir_r(DIR *, struct dirent *, struct dirent **) __DARWIN_INODE64(readdir_r);
-^
-```
-
-* Tried with PHP 7.0.33
-
-```
-./configure --prefix=/usr/local/php-7.0.33 --with-iconv=/usr/local/opt/libiconv --enable-sockets --with-mysqli=mysqlnd --with-zlib=/usr/local/opt/zlib
-
-...
-/Users/zedeng/src/zemian/php-7.0.33/main/reentrancy.c:139:23: error: too few arguments to function call, expected 3,
-      have 2
-        readdir_r(dirp, entry);
-        ~~~~~~~~~            ^
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/dirent.h:110:1: note: 'readdir_r' declared here
-int readdir_r(DIR *, struct dirent *, struct dirent **) __DARWIN_INODE64(readdir_r);
-^
-1 error generated.l
-```
+	- Even though this works, we still see many Warnnings though.
