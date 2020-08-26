@@ -1,3 +1,5 @@
+This repo contains notes on how to seutp and run Joomla 3.5.1. If you want latest Joomla dev notes, see http://github.com/zemian/learn-joomla instead.
+
 ## DB Setup
 
 ```
