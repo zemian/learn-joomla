@@ -15,7 +15,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'zemian';
 	public $password = 'test123';
-	public $db = 'joomla351';
+	public $db = 'joomla351db';
 	public $dbprefix = 'jo_';
 	public $live_site = '';
 	public $secret = '0BrkiyChJf74szyw';
