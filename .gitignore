@@ -2,5 +2,5 @@
 
 temp/
 
-joomla/administrator/joomla351-logs/
-joomla/administrator/joomla351-tmp/
+joomla/administrator/logs/
+joomla/administrator/tmp/
