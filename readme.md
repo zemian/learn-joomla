@@ -74,3 +74,13 @@ mysqldump --single-transaction --quick --no-autocommit --extended-insert=false -
 # Restore
 mysql -f -u zemian -p joomladb < joomladb-<date>-dump.sql
 ```
+
+## Joomla and PHP debugging
+
+Try setting the following in `configuration.php`
+
+```
+public $error_reporting = 'simple';
+```
+
+NOTE: PHP Warning is not just warnings, it actually stop application working!
