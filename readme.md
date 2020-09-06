@@ -1,42 +1,52 @@
 This repo contains notes on how to seutp and run Joomla 3.5.1.
 
-## Requires Software
+## Setup MySQL, PHP and WebServer
 
-* Joomla 3.5.1 (This repository code)
+See [learn-php readme.md](https://github.com/zemian/learn-php) on how to setup PHP for development.
+
+NOTE: The `joomla` folder contains version `3.5.1` distribution. This version runs best if you use:
+
 * PHP 5.6
-* MySQL 5.6
-* Lighttpd 1.4.55
+* MySQL 5.7
 
-## DB Setup
+## Setup Database
 
-```
-CREATE USER 'zemian'@'localhost' IDENTIFIED BY 'test123';
+Login as root and create a empty databse for wordpress:
+
+	mysql -u root
+
+```sql
+CREATE USER 'zemian'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test123';
 CREATE DATABASE joomladb CHARACTER SET utf8 COLLATE utf8_general_ci;
-GRANT ALL PRIVILEGES ON joomladb.* TO 'zemian'@'localhost';
+GRANT ALL PRIVILEGES ON wordpressdb.* TO 'zemian'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
 NOTE: For newer version of MySQL (eg: version 8+), you might need to use the following for user password:
 
 	CREATE USER 'zemian'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test123';
+	CREATE DATABASE joomladb CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
-## How to run
+## Setup WebServer
 
-```
-lighttpd -D -f lighttpd/lighttpd-php.conf
-```
+Pick one of the web server setup mentioned in `learn-php`, and it should setup your DocumentRoot to that repository folder. Assume you got it up and running, then you can simply link this `learn-joomla/joomla` as application under there.
+
+	ln -s $(pwd)/joomla ../learn-php/www/apps
+
+Now you can open http://localhost:3000/apps/joomla
+
+First time setup will create the database and setup the application settings. Note that the `installation` folder has been removed as part of the setup.
+
+Extra links:
 
 * Default login: `admin`/`test123` (This is only my local test installation. Use your own setup)
-* Admin: http://localhost:3000/administrator/
+* Admin: http://localhost:3000/apps/joomla/administrator/
 
-## Installation Joomla 3.5.1 with PHP 5.6.40
+## Installation Joomla 3.5.1 with PHP 5.6.40 notes
 
 The Joomla 3.5.1 has many extensions that still uses older verison of PHP 5.
 
-* Note that the `installation` folder has been removed as part of the setup.
-
-
-## Installation notes with PHP 7.4.9
+## Installation Joomla 3.5.1 with PHP 7.4.9 notes
 
 * The default Joomla 3.5.1 will not work with PHP 7.4.9. Had to fix few Joomla source files to get it installed.
 	
@@ -61,18 +71,9 @@ The Joomla 3.5.1 has many extensions that still uses older verison of PHP 5.
 
 	- Even though this works, we still see many Warnnings though.
 
-## How to resetup Joomla installation
+## How to re-setup Joomla installation
 
 After installation, it ask you to remove `installation` folder. We make a copy under `installation-remove-me` instead. So rename this back to `installation` and remove `configuration.php` will prompt you to re-install the DB again.
-
-## How to backup and restore DB for local dev
-
-```
-# Backup
-mysqldump --single-transaction --quick --no-autocommit --extended-insert=false -u zemian -p joomladb > joomladb-`date +%s`-dump.sql
-
-# Restore
-mysql -f -u zemian -p joomladb < joomladb-<date>-dump.sql
 ```
 
 ## Joomla and PHP debugging
