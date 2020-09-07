@@ -29,18 +29,19 @@ NOTE: For newer version of MySQL (eg: version 8+), you might need to use the fol
 
 ## Setup WebServer
 
-Pick one of the web server setup mentioned in `learn-php`, and it should setup your DocumentRoot to that repository folder. Assume you got it up and running, then you can simply link this `learn-joomla/joomla` as application under there.
+Simply get a web server running and find where the DocumentRoot is located. Then deploy/link/hardcode-path of this `learn-joomla` repository folder under it.
 
-	ln -s $(pwd)/joomla ../learn-php/www/apps
+For example: On Mac with `httpd`, you can simply symbolic link this repository like this:
 
-Now you can open http://localhost:3000/apps/joomla
+	ln -s /Users/zedeng/src/zemian/learn-joomla /usr/local/var/www
+	open http://localhost:3000/learn-joomla/joomla/
 
 First time setup will create the database and setup the application settings. Note that the `installation` folder has been removed as part of the setup.
 
 Extra links:
 
 * Default login: `admin`/`test123` (This is only my local test installation. Use your own setup)
-* Admin: http://localhost:3000/apps/joomla/administrator/
+* Admin: http://localhost:3000/learn-joomla/joomla//administrator/
 
 ## Installation Joomla 3.5.1 with PHP 5.6.40 notes
 
