@@ -4,3 +4,5 @@ temp/
 
 joomla/administrator/logs/
 joomla/administrator/tmp/
+joomla/logs/
+joomla/tmp/
