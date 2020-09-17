@@ -88,6 +88,6 @@ NOTE: PHP Warning is not just warnings, it actually stop application working!
 
 ## Custom Components
 
-* [ola component](com_ola_j3)
+* [ola component](com_ola_j3/readme.md)
 * [mini component](components/com_mini/readme.md)
 * [example component](com_examples/readme.md)

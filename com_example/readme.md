@@ -7,3 +7,7 @@ See
 
 * https://docs.joomla.org/Absolute_Basics_of_How_a_Component_Functions
 * https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Introduction
+
+## TODO
+
+* Why the the folder installed into Joomla is `com_examplecomponent` ?
