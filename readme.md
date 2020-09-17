@@ -75,7 +75,6 @@ The Joomla 3.5.1 has many extensions that still uses older verison of PHP 5.
 ## How to re-setup Joomla installation
 
 After installation, it ask you to remove `installation` folder. We make a copy under `installation-remove-me` instead. So rename this back to `installation` and remove `configuration.php` will prompt you to re-install the DB again.
-```
 
 ## Joomla and PHP debugging
 
@@ -86,3 +85,7 @@ public $error_reporting = 'simple';
 ```
 
 NOTE: PHP Warning is not just warnings, it actually stop application working!
+
+## Custom Components
+
+See [example component](components/com_examples/readme.md)
