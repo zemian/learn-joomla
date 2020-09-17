@@ -1,3 +1,8 @@
+## Starting Joomla
+
+User access: <yoursite>/joomla/index.php
+Administrator access: <yoursite>/joomla/administrator/index.php
+
 ## What are Components/Plugins/Modules/Extensions
 
 https://stackoverflow.com/questions/1478220/difference-between-components-modules-extensions-and-plugins-in-joomla

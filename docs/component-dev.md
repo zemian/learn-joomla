@@ -1,3 +1,17 @@
+## How a Component Works
+
+https://docs.joomla.org/Absolute_Basics_of_How_a_Component_Functions
+
+## How to access component
+
+* Through a Menu assignment
+
+* Through direct URL: 
+    - User access: <yoursite>/joomla/index.php?option=com_<component_name>
+    - Administrator access: <yoursite>/joomla/administrator/index.php?option=com_<component_name>
+    
+Example: http://localhost:3001/index.php?option=com_example
+
 ## Simple Component
 
 Let's say we want create `example` component in Joomla, then you need these two files:
