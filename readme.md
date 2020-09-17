@@ -90,6 +90,8 @@ NOTE: PHP Warning is not just warnings, it actually stop application working!
 
 If you see "Joomla! Debug Console" box on each page of Joomla that means the system has the "debug" flag enabled. This console box provide many valuable information for debugging purpose. Remember to turn it off before production.
 
+NOTE: The configuration of "System Debug" is actually a Extension > Plugin settings.
+
 ## Custom Components
 
 * [ola component](com_ola_j3/readme.md)
