@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
 
-    <name>example component</name>
+    <name>example</name>
     <author>Zemian Deng</author>
     <version>1.0</version>
     <description>Example of a Joomla component</description>
@@ -15,7 +15,7 @@
     </files>
 
     <administration>
-        <menu link='index.php?option=com_example'>Example Component</menu>
+        <menu link='index.php?option=com_example'>Example Admin</menu>
         <files folder="admin">
             <filename>index.html</filename>
             <filename>example.php</filename>            
