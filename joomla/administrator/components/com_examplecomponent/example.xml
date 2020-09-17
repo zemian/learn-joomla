@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+
+    <name>example component</name>
+    <author>Zemian Deng</author>
+    <version>1.0</version>
+    <description>Example of a Joomla component</description>
+    
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>example.php</filename>
+        <filename>controller.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+    </files>
+
+    <administration>
+        <menu link='index.php?option=com_example'>Example Component</menu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>example.php</filename>            
+        </files>
+    </administration>
+    
+</extension>
