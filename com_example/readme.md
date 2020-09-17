@@ -1,6 +1,7 @@
 ## com_example
 
-Our first custom Joomla example component using MVC pattern.
+Our first custom Joomla example component using MVC pattern based on com_ola_j3
+(simplified it without DB access)
 
 See 
 
