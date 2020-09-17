@@ -4,4 +4,4 @@ mysqldump --single-transaction \
 --no-autocommit \
 --extended-insert=false \
 -u root \
-joomladb > db/joomladb-`date +%s`-dump.sql
+joomladb > db/joomladb.sql
