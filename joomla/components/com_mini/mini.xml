@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+
+    <name>mini</name>
+    <author>Zemian Deng</author>
+    <version>1.0</version>
+    <description>Example of minimal Joomla component</description>
+    
+</extension>
