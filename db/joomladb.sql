@@ -35,7 +35,7 @@ CREATE TABLE `jo_assets` (
   UNIQUE KEY `idx_asset_name` (`name`),
   KEY `idx_lft_rgt` (`lft`,`rgt`),
   KEY `idx_parent_id` (`parent_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=185 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=187 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,40 +45,40 @@ CREATE TABLE `jo_assets` (
 LOCK TABLES `jo_assets` WRITE;
 /*!40000 ALTER TABLE `jo_assets` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `jo_assets` VALUES (1,0,1,434,0,'root.1','Root Asset','{\"core.login.site\":{\"6\":1,\"2\":1},\"core.login.admin\":{\"6\":1},\"core.login.offline\":[],\"core.admin\":{\"8\":1},\"core.manage\":{\"7\":1},\"core.create\":{\"6\":1,\"3\":1},\"core.delete\":{\"6\":1},\"core.edit\":{\"6\":1,\"4\":1},\"core.edit.state\":{\"6\":1,\"5\":1},\"core.edit.own\":{\"6\":1,\"3\":1}}');
+INSERT INTO `jo_assets` VALUES (1,0,1,438,0,'root.1','Root Asset','{\"core.login.site\":{\"6\":1,\"2\":1},\"core.login.admin\":{\"6\":1},\"core.login.offline\":[],\"core.admin\":{\"8\":1},\"core.manage\":{\"7\":1},\"core.create\":{\"6\":1,\"3\":1},\"core.delete\":{\"6\":1},\"core.edit\":{\"6\":1,\"4\":1},\"core.edit.state\":{\"6\":1,\"5\":1},\"core.edit.own\":{\"6\":1,\"3\":1}}');
 INSERT INTO `jo_assets` VALUES (2,1,2,3,1,'com_admin','com_admin','{}');
 INSERT INTO `jo_assets` VALUES (3,1,4,11,1,'com_banners','com_banners','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (4,1,12,13,1,'com_cache','com_cache','{\"core.admin\":{\"7\":1},\"core.manage\":{\"7\":1}}');
 INSERT INTO `jo_assets` VALUES (5,1,14,15,1,'com_checkin','com_checkin','{\"core.admin\":{\"7\":1},\"core.manage\":{\"7\":1}}');
 INSERT INTO `jo_assets` VALUES (6,1,16,17,1,'com_config','com_config','{}');
 INSERT INTO `jo_assets` VALUES (7,1,18,87,1,'com_contact','com_contact','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (8,1,88,297,1,'com_content','com_content','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":{\"3\":1},\"core.delete\":[],\"core.edit\":{\"4\":1},\"core.edit.state\":{\"5\":1},\"core.edit.own\":[]}');
-INSERT INTO `jo_assets` VALUES (9,1,298,299,1,'com_cpanel','com_cpanel','{}');
-INSERT INTO `jo_assets` VALUES (10,1,300,301,1,'com_installer','com_installer','{\"core.admin\":[],\"core.manage\":{\"7\":0},\"core.delete\":{\"7\":0},\"core.edit.state\":{\"7\":0}}');
-INSERT INTO `jo_assets` VALUES (11,1,302,303,1,'com_languages','com_languages','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (12,1,304,305,1,'com_login','com_login','{}');
-INSERT INTO `jo_assets` VALUES (13,1,306,307,1,'com_mailto','com_mailto','{}');
-INSERT INTO `jo_assets` VALUES (14,1,308,309,1,'com_massmail','com_massmail','{}');
-INSERT INTO `jo_assets` VALUES (15,1,310,311,1,'com_media','com_media','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":{\"3\":1},\"core.delete\":{\"5\":1},\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (16,1,312,313,1,'com_menus','com_menus','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (8,1,88,299,1,'com_content','com_content','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":{\"3\":1},\"core.delete\":[],\"core.edit\":{\"4\":1},\"core.edit.state\":{\"5\":1},\"core.edit.own\":[]}');
+INSERT INTO `jo_assets` VALUES (9,1,300,301,1,'com_cpanel','com_cpanel','{}');
+INSERT INTO `jo_assets` VALUES (10,1,302,303,1,'com_installer','com_installer','{\"core.admin\":[],\"core.manage\":{\"7\":0},\"core.delete\":{\"7\":0},\"core.edit.state\":{\"7\":0}}');
+INSERT INTO `jo_assets` VALUES (11,1,304,305,1,'com_languages','com_languages','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (12,1,306,307,1,'com_login','com_login','{}');
+INSERT INTO `jo_assets` VALUES (13,1,308,309,1,'com_mailto','com_mailto','{}');
+INSERT INTO `jo_assets` VALUES (14,1,310,311,1,'com_massmail','com_massmail','{}');
+INSERT INTO `jo_assets` VALUES (15,1,312,313,1,'com_media','com_media','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":{\"3\":1},\"core.delete\":{\"5\":1},\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (16,1,314,315,1,'com_menus','com_menus','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (17,1,37,38,1,'com_messages','com_messages','{\"core.admin\":{\"7\":1},\"core.manage\":{\"7\":1}}');
-INSERT INTO `jo_assets` VALUES (18,1,316,317,1,'com_modules','com_modules','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (19,1,318,325,1,'com_newsfeeds','com_newsfeeds','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (20,1,326,327,1,'com_plugins','com_plugins','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (21,1,328,329,1,'com_redirect','com_redirect','{\"core.admin\":{\"7\":1},\"core.manage\":[]}');
-INSERT INTO `jo_assets` VALUES (22,1,330,331,1,'com_search','com_search','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}');
-INSERT INTO `jo_assets` VALUES (23,1,332,333,1,'com_templates','com_templates','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (24,1,334,337,1,'com_users','com_users','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (26,1,338,339,1,'com_wrapper','com_wrapper','{}');
-INSERT INTO `jo_assets` VALUES (33,1,418,419,1,'com_finder','com_finder','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}');
+INSERT INTO `jo_assets` VALUES (18,1,318,321,1,'com_modules','com_modules','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (19,1,322,329,1,'com_newsfeeds','com_newsfeeds','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (20,1,330,331,1,'com_plugins','com_plugins','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (21,1,332,333,1,'com_redirect','com_redirect','{\"core.admin\":{\"7\":1},\"core.manage\":[]}');
+INSERT INTO `jo_assets` VALUES (22,1,334,335,1,'com_search','com_search','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}');
+INSERT INTO `jo_assets` VALUES (23,1,336,337,1,'com_templates','com_templates','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (24,1,338,341,1,'com_users','com_users','{\"core.admin\":{\"7\":1},\"core.manage\":[],\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (26,1,342,343,1,'com_wrapper','com_wrapper','{}');
+INSERT INTO `jo_assets` VALUES (33,1,422,423,1,'com_finder','com_finder','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}');
 INSERT INTO `jo_assets` VALUES (34,8,105,108,2,'com_content.category.9','Uncategorised','{\"core.create\":{\"10\":0,\"12\":0},\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (35,3,7,8,2,'com_banners.category.10','Uncategorised','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (36,7,23,24,2,'com_contact.category.11','Uncategorised','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (37,19,321,322,2,'com_newsfeeds.category.12','Uncategorised','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (39,8,109,296,2,'com_content.category.14','Sample Data-Articles','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (37,19,325,326,2,'com_newsfeeds.category.12','Uncategorised','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (39,8,109,298,2,'com_content.category.14','Sample Data-Articles','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (40,3,9,10,2,'com_banners.category.15','Sample Data-Banners','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (41,7,25,86,2,'com_contact.category.16','Sample Data-Contact','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (42,19,323,324,2,'com_newsfeeds.category.17','Sample Data-Newsfeeds','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (42,19,327,328,2,'com_newsfeeds.category.17','Sample Data-Newsfeeds','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (44,39,110,245,3,'com_content.category.19','Joomla!','{\"core.create\":{\"10\":0,\"12\":0},\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (45,44,111,222,4,'com_content.category.20','Extensions','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (46,45,112,127,5,'com_content.category.21','Components','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[],\"core.edit.own\":[]}');
@@ -195,18 +195,20 @@ INSERT INTO `jo_assets` VALUES (165,94,150,151,7,'com_content.article.66','Lates
 INSERT INTO `jo_assets` VALUES (166,47,183,188,6,'com_content.category.75','Navigation Modules','{\"core.create\":[],\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[],\"core.edit.own\":[]}');
 INSERT INTO `jo_assets` VALUES (167,54,289,290,4,'com_content.category.76','Recipes','{\"core.create\":{\"12\":1,\"10\":1},\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[],\"core.edit.own\":{\"12\":1,\"10\":1}}');
 INSERT INTO `jo_assets` VALUES (168,34,106,107,3,'com_content.article.67','What\'s New in 1.5?','{\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (169,24,335,336,2,'com_users.category.77','Uncategorised','');
+INSERT INTO `jo_assets` VALUES (169,24,339,340,2,'com_users.category.77','Uncategorised','');
 INSERT INTO `jo_assets` VALUES (170,50,217,218,6,'com_content.article.68','Captcha','{\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (171,50,219,220,6,'com_content.article.69','Quick Icons','{\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (172,96,178,179,7,'com_content.article.70','Smart Search','{\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[]}');
-INSERT INTO `jo_assets` VALUES (173,1,420,421,1,'com_joomlaupdate','com_joomlaupdate','{\"core.admin\":[],\"core.manage\":[],\"core.delete\":[],\"core.edit.state\":[]}');
+INSERT INTO `jo_assets` VALUES (173,1,424,425,1,'com_joomlaupdate','com_joomlaupdate','{\"core.admin\":[],\"core.manage\":[],\"core.delete\":[],\"core.edit.state\":[]}');
 INSERT INTO `jo_assets` VALUES (174,48,197,198,6,'com_content.category.78','Protostar','{\"core.create\":{\"6\":1,\"3\":1},\"core.delete\":{\"6\":1},\"core.edit\":{\"6\":1,\"4\":1},\"core.edit.state\":{\"6\":1,\"5\":1},\"core.edit.own\":{\"6\":1,\"3\":1}}');
-INSERT INTO `jo_assets` VALUES (175,1,422,423,1,'com_tags','com_tags','{\"core.admin\":{\"8\":1},\"core.manage\":{\"7\":1},\"core.create\":{\"6\":1,\"3\":1},\"core.delete\":{\"6\":1},\"core.edit\":{\"6\":1,\"4\":1},\"core.edit.state\":{\"6\":1,\"5\":1}}');
-INSERT INTO `jo_assets` VALUES (176,1,424,425,1,'com_contenthistory','com_contenthistory','{}');
-INSERT INTO `jo_assets` VALUES (177,1,426,427,1,'com_ajax','com_ajax','{}');
-INSERT INTO `jo_assets` VALUES (178,1,428,429,1,'com_postinstall','com_postinstall','{}');
-INSERT INTO `jo_assets` VALUES (180,1,430,431,1,'com_ola','COM_OLA','{}');
-INSERT INTO `jo_assets` VALUES (184,1,432,433,1,'com_example','example','{}');
+INSERT INTO `jo_assets` VALUES (175,1,426,427,1,'com_tags','com_tags','{\"core.admin\":{\"8\":1},\"core.manage\":{\"7\":1},\"core.create\":{\"6\":1,\"3\":1},\"core.delete\":{\"6\":1},\"core.edit\":{\"6\":1,\"4\":1},\"core.edit.state\":{\"6\":1,\"5\":1}}');
+INSERT INTO `jo_assets` VALUES (176,1,428,429,1,'com_contenthistory','com_contenthistory','{}');
+INSERT INTO `jo_assets` VALUES (177,1,430,431,1,'com_ajax','com_ajax','{}');
+INSERT INTO `jo_assets` VALUES (178,1,432,433,1,'com_postinstall','com_postinstall','{}');
+INSERT INTO `jo_assets` VALUES (180,1,434,435,1,'com_ola','COM_OLA','{}');
+INSERT INTO `jo_assets` VALUES (184,1,436,437,1,'com_example','example','{}');
+INSERT INTO `jo_assets` VALUES (185,18,319,320,2,'com_modules.module.91','My Module Example','{\"core.delete\":[],\"core.edit\":[],\"core.edit.state\":[],\"module.edit.frontend\":[]}');
+INSERT INTO `jo_assets` VALUES (186,39,296,297,3,'com_content.article.71','Test Page','{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1},\"core.create\":{\"3\":1},\"core.delete\":[],\"core.edit\":{\"4\":1},\"core.edit.state\":{\"5\":1},\"core.edit.own\":[]}');
 /*!40000 ALTER TABLE `jo_assets` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -623,7 +625,7 @@ CREATE TABLE `jo_content` (
   KEY `idx_featured_catid` (`featured`,`catid`),
   KEY `idx_language` (`language`),
   KEY `idx_xreference` (`xreference`)
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -700,6 +702,7 @@ INSERT INTO `jo_content` VALUES (67,168,'What\'s New in 1.5?','whats-new-in-15',
 INSERT INTO `jo_content` VALUES (68,170,'Captcha','captcha','<p>The Captcha plugins are used to prevent spam submissions on your forms such as registration, contact and login. You basic installation of Joomla includes one Captcha plugin which leverages the ReCaptcha&reg; service but you may install other plugins connecting to different Captcha systems.</p><p>Default on:</p><ul><li>ReCaptcha <a href=\"https://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help31:Extensions_Plugin_Manager_Edit\">help</a></li></ul><p>Note: ReCaptcha is a the trademark of Google Inc. and is an independent product not associated with or endorsed by the Joomla Project. You will need to register and agree to the Terms of Service at Recaptcha.net to use this plugin. Complete instructions are available if you edit the ReCaptcha plugin in the Plugin Manager.</p>','',1,25,'2011-01-01 00:00:01',921,'Joomla','0000-00-00 00:00:00',0,0,'0000-00-00 00:00:00','2012-01-17 03:20:45','0000-00-00 00:00:00','{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}','{\"urla\":\"\",\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":\"\",\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":\"\",\"urlctext\":\"\",\"targetc\":\"\"}','{\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"alternative_readmore\":\"\",\"article_layout\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\"}',1,1,'','',1,0,'{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}',0,'*','');
 INSERT INTO `jo_content` VALUES (69,171,'Quick Icons','quick-icons','<p> The Quick Icon plugin group is used to provide notification that updates to Joomla! or installed extensions are available and should be applied. These notifications display on your administrator control panel, which is the page you see when you first log in to your site administrator.</p><p>Default on:</p><ul><li>Quick icon - Joomla! extensions updates notification <a href=\"https://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help31:Extensions_Plugin_Manager_Edit\">Help</a>.</li><li>Quick icon - Joomla! update notification <a href=\"https://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help31:Extensions_Plugin_Manager_Edit\">Help</a></li></ul>','',1,25,'2011-01-01 00:00:01',921,'Joomla','0000-00-00 00:00:00',0,0,'0000-00-00 00:00:00','2012-01-17 03:27:39','0000-00-00 00:00:00','{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}','{\"urla\":\"\",\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":\"\",\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":\"\",\"urlctext\":\"\",\"targetc\":\"\"}','{\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"alternative_readmore\":\"\",\"article_layout\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\"}',1,0,'','',1,0,'{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}',0,'*','');
 INSERT INTO `jo_content` VALUES (70,170,'Smart Search','smart-search','<p>This module provides search using the Smart Search component. You should only use it if you have indexed your content and either have enabled the Smart Search content plugin or are keeping the index of your site updated manually. <a href=\"https://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help31:Extensions_Module_Manager_Smart_Search\">Help</a>.</p><div class=\"sample-module\">{loadmodule finder,Smart Search}</div>','',1,67,'2011-01-01 00:00:01',921,'Joomla','0000-00-00 00:00:00',0,0,'0000-00-00 00:00:00','2012-01-17 03:42:36','0000-00-00 00:00:00','{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}','{\"urla\":\"\",\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":\"\",\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":\"\",\"urlctext\":\"\",\"targetc\":\"\"}','{\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"alternative_readmore\":\"\",\"article_layout\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\"}',1,0,'','',1,0,'{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}',0,'*','');
+INSERT INTO `jo_content` VALUES (71,186,'Test Page','test-page','<p>Just a test</p>','',1,14,'2020-09-18 12:45:36',921,'','2020-09-18 12:45:36',0,0,'0000-00-00 00:00:00','2020-09-18 12:45:36','0000-00-00 00:00:00','{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}','{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}','{\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_layout\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\"}',1,0,'','',1,1,'{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}',0,'*','');
 /*!40000 ALTER TABLE `jo_content` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -890,7 +893,7 @@ CREATE TABLE `jo_extensions` (
   KEY `element_clientid` (`element`,`client_id`),
   KEY `element_folder_clientid` (`element`,`folder`,`client_id`),
   KEY `extension` (`type`,`element`,`folder`,`client_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=708 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=709 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -932,7 +935,7 @@ INSERT INTO `jo_extensions` VALUES (31,'com_ajax','component','com_ajax','',1,1,
 INSERT INTO `jo_extensions` VALUES (32,'com_postinstall','component','com_postinstall','',1,1,1,1,'{\"name\":\"com_postinstall\",\"type\":\"component\",\"creationDate\":\"September 2013\",\"author\":\"Joomla! Project\",\"copyright\":\"(C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.2.0\",\"description\":\"COM_POSTINSTALL_XML_DESCRIPTION\",\"group\":\"\"}','','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (101,'SimplePie','library','simplepie','',0,1,1,1,'{\"name\":\"SimplePie\",\"type\":\"library\",\"creationDate\":\"2004\",\"author\":\"SimplePie\",\"copyright\":\"Copyright (c) 2004-2009, Ryan Parman and Geoffrey Sneddon\",\"authorEmail\":\"\",\"authorUrl\":\"http:\\/\\/simplepie.org\\/\",\"version\":\"1.2\",\"description\":\"LIB_SIMPLEPIE_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"simplepie\"}','','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (102,'phputf8','library','phputf8','',0,1,1,1,'{\"name\":\"phputf8\",\"type\":\"library\",\"creationDate\":\"2006\",\"author\":\"Harry Fuecks\",\"copyright\":\"Copyright various authors\",\"authorEmail\":\"hfuecks@gmail.com\",\"authorUrl\":\"http:\\/\\/sourceforge.net\\/projects\\/phputf8\",\"version\":\"0.5\",\"description\":\"LIB_PHPUTF8_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"phputf8\"}','','','',0,'0000-00-00 00:00:00',0,0);
-INSERT INTO `jo_extensions` VALUES (103,'Joomla! Platform','library','joomla','',0,1,1,1,'{\"name\":\"Joomla! Platform\",\"type\":\"library\",\"creationDate\":\"2008\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"https:\\/\\/www.joomla.org\",\"version\":\"13.1\",\"description\":\"LIB_JOOMLA_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"joomla\"}','{\"mediaversion\":\"1c8054f36b15aa4572cd905551855fff\"}','','',0,'0000-00-00 00:00:00',0,0);
+INSERT INTO `jo_extensions` VALUES (103,'Joomla! Platform','library','joomla','',0,1,1,1,'{\"name\":\"Joomla! Platform\",\"type\":\"library\",\"creationDate\":\"2008\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"https:\\/\\/www.joomla.org\",\"version\":\"13.1\",\"description\":\"LIB_JOOMLA_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"joomla\"}','{\"mediaversion\":\"cce39966409156e99ecc6a2891013f98\"}','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (104,'IDNA Convert','library','idna_convert','',0,1,1,1,'{\"name\":\"IDNA Convert\",\"type\":\"library\",\"creationDate\":\"2004\",\"author\":\"phlyLabs\",\"copyright\":\"2004-2011 phlyLabs Berlin, http:\\/\\/phlylabs.de\",\"authorEmail\":\"phlymail@phlylabs.de\",\"authorUrl\":\"http:\\/\\/phlylabs.de\",\"version\":\"0.8.0\",\"description\":\"LIB_IDNA_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"idna_convert\"}','','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (105,'FOF','library','fof','',0,1,1,1,'{\"name\":\"FOF\",\"type\":\"library\",\"creationDate\":\"2015-04-22 13:15:32\",\"author\":\"Nicholas K. Dionysopoulos \\/ Akeeba Ltd\",\"copyright\":\"(C)2011-2015 Nicholas K. Dionysopoulos\",\"authorEmail\":\"nicholas@akeebabackup.com\",\"authorUrl\":\"https:\\/\\/www.akeebabackup.com\",\"version\":\"2.4.3\",\"description\":\"LIB_FOF_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"fof\"}','','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (106,'PHPass','library','phpass','',0,1,1,1,'{\"name\":\"PHPass\",\"type\":\"library\",\"creationDate\":\"2004-2006\",\"author\":\"Solar Designer\",\"copyright\":\"\",\"authorEmail\":\"solar@openwall.com\",\"authorUrl\":\"http:\\/\\/www.openwall.com\\/phpass\\/\",\"version\":\"0.3\",\"description\":\"LIB_PHPASS_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"phpass\"}','','','',0,'0000-00-00 00:00:00',0,0);
@@ -1025,7 +1028,7 @@ INSERT INTO `jo_extensions` VALUES (448,'plg_twofactorauth_totp','plugin','totp'
 INSERT INTO `jo_extensions` VALUES (449,'plg_authentication_cookie','plugin','cookie','authentication',0,1,1,0,'{\"name\":\"plg_authentication_cookie\",\"type\":\"plugin\",\"creationDate\":\"July 2013\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.0.0\",\"description\":\"PLG_AUTH_COOKIE_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"cookie\"}','','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (450,'plg_twofactorauth_yubikey','plugin','yubikey','twofactorauth',0,0,1,0,'{\"name\":\"plg_twofactorauth_yubikey\",\"type\":\"plugin\",\"creationDate\":\"September 2013\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.2.0\",\"description\":\"PLG_TWOFACTORAUTH_YUBIKEY_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"yubikey\"}','','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (451,'plg_search_tags','plugin','tags','search',0,1,1,0,'{\"name\":\"plg_search_tags\",\"type\":\"plugin\",\"creationDate\":\"March 2014\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.0.0\",\"description\":\"PLG_SEARCH_TAGS_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"tags\"}','{\"search_limit\":\"50\",\"show_tagged_items\":\"1\"}','','',0,'0000-00-00 00:00:00',0,0);
-INSERT INTO `jo_extensions` VALUES (452,'plg_system_updatenotification','plugin','updatenotification','system',0,1,1,0,'{\"name\":\"plg_system_updatenotification\",\"type\":\"plugin\",\"creationDate\":\"May 2015\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_SYSTEM_UPDATENOTIFICATION_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"updatenotification\"}','{\"lastrun\":1600379156}','','',0,'0000-00-00 00:00:00',0,0);
+INSERT INTO `jo_extensions` VALUES (452,'plg_system_updatenotification','plugin','updatenotification','system',0,1,1,0,'{\"name\":\"plg_system_updatenotification\",\"type\":\"plugin\",\"creationDate\":\"May 2015\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_SYSTEM_UPDATENOTIFICATION_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"updatenotification\"}','{\"lastrun\":1600432127}','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (453,'plg_editors-xtd_module','plugin','module','editors-xtd',0,1,1,0,'{\"name\":\"plg_editors-xtd_module\",\"type\":\"plugin\",\"creationDate\":\"October 2015\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_MODULE_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"module\"}','','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (454,'plg_system_stats','plugin','stats','system',0,1,1,0,'{\"name\":\"plg_system_stats\",\"type\":\"plugin\",\"creationDate\":\"November 2013\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_SYSTEM_STATS_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"stats\"}','{\"mode\":3,\"lastrun\":1599422494,\"unique_id\":\"4d75bc9a563333dba620f3eef14333c10ed29211\",\"interval\":12}','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (503,'beez3','template','beez3','',0,1,1,0,'{\"name\":\"beez3\",\"type\":\"template\",\"creationDate\":\"25 November 2009\",\"author\":\"Angie Radtke\",\"copyright\":\"Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.\",\"authorEmail\":\"a.radtke@derauftritt.de\",\"authorUrl\":\"http:\\/\\/www.der-auftritt.de\",\"version\":\"3.1.0\",\"description\":\"TPL_BEEZ3_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"templateDetails\"}','{\"wrapperSmall\":\"53\",\"wrapperLarge\":\"72\",\"sitetitle\":\"\",\"sitedescription\":\"\",\"navposition\":\"center\",\"templatecolor\":\"nature\"}','','',0,'0000-00-00 00:00:00',0,0);
@@ -1038,6 +1041,7 @@ INSERT INTO `jo_extensions` VALUES (700,'files_joomla','file','joomla','',0,1,1,
 INSERT INTO `jo_extensions` VALUES (702,'COM_OLA','component','com_ola','',1,1,0,0,'{\"name\":\"COM_OLA\",\"type\":\"component\",\"creationDate\":\"Setembro 2012\",\"author\":\"Christophe Demko\",\"copyright\":\"Copyright (C) 2012 Christophe Demko. All rights reserved.\",\"authorEmail\":\"john.doe@example.org\",\"authorUrl\":\"http:\\/\\/www.example.org\",\"version\":\"1.0\",\"description\":\"COM_OLA_DESCRIPTION\",\"group\":\"\",\"filename\":\"ola\"}','{}','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (703,'mini','component','com_mini','',0,1,1,0,'{\"name\":\"mini\",\"type\":\"component\",\"creationDate\":\"Unknown\",\"author\":\"Zemian Deng\",\"copyright\":\"\",\"authorEmail\":\"\",\"authorUrl\":\"\",\"version\":\"1.0\",\"description\":\"Example of minimal Joomla component\",\"group\":\"\"}','{}','','',0,'0000-00-00 00:00:00',0,0);
 INSERT INTO `jo_extensions` VALUES (707,'example','component','com_example','',1,1,0,0,'{\"name\":\"example\",\"type\":\"component\",\"creationDate\":\"Unknown\",\"author\":\"Zemian Deng\",\"copyright\":\"\",\"authorEmail\":\"\",\"authorUrl\":\"\",\"version\":\"1.0\",\"description\":\"Example of a Joomla component\",\"group\":\"\",\"filename\":\"example\"}','{}','','',0,'0000-00-00 00:00:00',0,0);
+INSERT INTO `jo_extensions` VALUES (708,'My Module Example','module','mod_mymodule','',0,1,0,0,'{\"name\":\"My Module Example\",\"type\":\"module\",\"creationDate\":\"Unknown\",\"author\":\"John Doe\",\"copyright\":\"\",\"authorEmail\":\"\",\"authorUrl\":\"\",\"version\":\"1.0.0\",\"description\":\"A simple Hello, World! module.\",\"group\":\"\",\"filename\":\"mod_mymodule\"}','{}','','',0,'0000-00-00 00:00:00',0,0);
 /*!40000 ALTER TABLE `jo_extensions` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -1989,7 +1993,7 @@ CREATE TABLE `jo_menu` (
   KEY `idx_alias` (`alias`(100)),
   KEY `idx_path` (`path`(100)),
   KEY `idx_language` (`language`)
-) ENGINE=InnoDB AUTO_INCREMENT=479 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=480 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1999,7 +2003,7 @@ CREATE TABLE `jo_menu` (
 LOCK TABLES `jo_menu` WRITE;
 /*!40000 ALTER TABLE `jo_menu` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `jo_menu` VALUES (1,'','Menu_Item_Root','root','','','','',1,0,0,0,0,'0000-00-00 00:00:00',0,0,'',0,'',0,263,0,'*',0);
+INSERT INTO `jo_menu` VALUES (1,'','Menu_Item_Root','root','','','','',1,0,0,0,0,'0000-00-00 00:00:00',0,0,'',0,'',0,265,0,'*',0);
 INSERT INTO `jo_menu` VALUES (2,'menu','com_banners','Banners','','Banners','index.php?option=com_banners','component',0,1,1,4,0,'0000-00-00 00:00:00',0,0,'class:banners',0,'',11,20,0,'*',1);
 INSERT INTO `jo_menu` VALUES (3,'menu','com_banners','Banners','','Banners/Banners','index.php?option=com_banners','component',0,2,2,4,0,'0000-00-00 00:00:00',0,0,'class:banners',0,'',12,13,0,'*',1);
 INSERT INTO `jo_menu` VALUES (4,'menu','com_banners_categories','Categories','','Banners/Categories','index.php?option=com_categories&extension=com_banners','component',0,2,2,6,0,'0000-00-00 00:00:00',0,0,'class:banners-cat',0,'',14,15,0,'*',1);
@@ -2131,6 +2135,7 @@ INSERT INTO `jo_menu` VALUES (471,'menu','com_tags','com-tags','','com-tags','in
 INSERT INTO `jo_menu` VALUES (472,'main','com_postinstall','Post-installation messages','','Post-installation messages','index.php?option=com_postinstall','component',0,1,1,32,0,'0000-00-00 00:00:00',0,1,'class:postinstall',0,'',257,258,0,'*',1);
 INSERT INTO `jo_menu` VALUES (475,'main','COM_OLA_MENU','com-ola-menu','','com-ola-menu','index.php?option=com_ola','component',0,1,1,702,0,'0000-00-00 00:00:00',0,1,'../media/com_ola/images/tux-16x16.png',0,'{}',259,260,0,'',1);
 INSERT INTO `jo_menu` VALUES (478,'main','Example Admin','example-admin','','example-admin','index.php?option=com_example','component',0,1,1,707,0,'0000-00-00 00:00:00',0,1,'class:component',0,'{}',261,262,0,'',1);
+INSERT INTO `jo_menu` VALUES (479,'mainmenu','Test Page','test-page','','test-page','index.php?option=com_content&view=article&id=71','component',1,1,1,22,0,'0000-00-00 00:00:00',0,1,' ',0,'{\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_tags\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0}',263,264,0,'*',0);
 /*!40000 ALTER TABLE `jo_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2149,7 +2154,7 @@ CREATE TABLE `jo_menu_types` (
   `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_menutype` (`menutype`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2165,6 +2170,7 @@ INSERT INTO `jo_menu_types` VALUES (4,'aboutjoomla','About Joomla','All about Jo
 INSERT INTO `jo_menu_types` VALUES (5,'parks','Australian Parks','Main menu for a site about Australian parks');
 INSERT INTO `jo_menu_types` VALUES (6,'mainmenu','Main Menu','Simple Home Menu');
 INSERT INTO `jo_menu_types` VALUES (7,'fruitshop','Fruit Shop','Menu for the sample shop site.');
+INSERT INTO `jo_menu_types` VALUES (8,'test-menu','Test Page','');
 /*!40000 ALTER TABLE `jo_menu_types` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2258,7 +2264,7 @@ CREATE TABLE `jo_modules` (
   KEY `published` (`published`,`access`),
   KEY `newsfeeds` (`module`,`published`),
   KEY `idx_language` (`language`)
-) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2327,6 +2333,7 @@ INSERT INTO `jo_modules` VALUES (87,0,'Fruit Shop','','',1,'position-7',0,'0000-
 INSERT INTO `jo_modules` VALUES (88,0,'Image Module','','<p><img src=\"images/headers/maple.jpg\" alt=\"\" /></p>',1,'position-3',0,'0000-00-00 00:00:00','0000-00-00 00:00:00','0000-00-00 00:00:00',1,'mod_custom',1,0,'{\"prepare_content\":\"1\",\"backgroundimage\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}',0,'*');
 INSERT INTO `jo_modules` VALUES (89,0,'Custom','','<p>In this module you can put whatever text or other content you would like.</p>',1,'',0,'0000-00-00 00:00:00','0000-00-00 00:00:00','0000-00-00 00:00:00',1,'mod_custom',1,1,'{\"prepare_content\":\"1\",\"backgroundimage\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}',0,'*');
 INSERT INTO `jo_modules` VALUES (90,0,'Parks Image Module','','<p><img src=\"images/sampledata/parks/banner_cradle.jpg\" alt=\"\" /></p>',1,'position-3',0,'0000-00-00 00:00:00','0000-00-00 00:00:00','0000-00-00 00:00:00',1,'mod_custom',1,1,'{\"prepare_content\":\"1\",\"backgroundimage\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}',0,'*');
+INSERT INTO `jo_modules` VALUES (91,185,'My Module Example','','',1,'position-3',0,'0000-00-00 00:00:00','0000-00-00 00:00:00','0000-00-00 00:00:00',1,'mod_mymodule',1,1,'{\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}',0,'*');
 /*!40000 ALTER TABLE `jo_modules` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2797,8 +2804,8 @@ CREATE TABLE `jo_session` (
 LOCK TABLES `jo_session` WRITE;
 /*!40000 ALTER TABLE `jo_session` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `jo_session` VALUES ('33fd3fba222631fc3d5330e5b9d6ccba',1,0,'1600381011','joomla|s:3664:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo5MDtzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE2MDAzNzkyMzQ7czo0OiJsYXN0IjtpOjE2MDAzODEwMDg7czozOiJub3ciO2k6MTYwMDM4MTAxMTt9czo1OiJ0b2tlbiI7czozMjoiVUtXUW1zcXdmTjlranB3dDdNdjg4VG1DZEVKVDQ0ejgiO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjI6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6NTp7czoxMzoiY29tX2luc3RhbGxlciI7Tzo4OiJzdGRDbGFzcyI6NTp7czo3OiJtZXNzYWdlIjtzOjA6IiI7czoxNzoiZXh0ZW5zaW9uX21lc3NhZ2UiO3M6MDoiIjtzOjY6Im1hbmFnZSI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo2OiJmaWx0ZXIiO2E6NTp7czo2OiJzZWFyY2giO3M6NzoiZXhhbXBsZSI7czo5OiJjbGllbnRfaWQiO3M6MDoiIjtzOjY6InN0YXR1cyI7czowOiIiO3M6NDoidHlwZSI7czowOiIiO3M6NjoiZm9sZGVyIjtzOjA6IiI7fXM6NDoibGlzdCI7YToyOntzOjEyOiJmdWxsb3JkZXJpbmciO3M6ODoibmFtZSBBU0MiO3M6NToibGltaXQiO3M6MjoiMjAiO31zOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fXM6NzoiaW5zdGFsbCI7Tzo4OiJzdGRDbGFzcyI6MTp7czoxNzoiaW5zdGFsbF9kaXJlY3RvcnkiO3M6NDk6Ii9Vc2Vycy96ZWRlbmcvc3JjL3plbWlhbi9sZWFybi1qb29tbGEvY29tX2V4YW1wbGUiO31zOjEyOiJyZWRpcmVjdF91cmwiO047fXM6OToiY29tX21lbnVzIjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NDoibWVudSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJkYXRhIjtOO319fXM6MTA6ImNvbV9jb25maWciO086ODoic3RkQ2xhc3MiOjE6e3M6NjoiY29uZmlnIjtPOjg6InN0ZENsYXNzIjoxOntzOjY6Imdsb2JhbCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJkYXRhIjtOO319fXM6MTE6ImNvbV9wbHVnaW5zIjtPOjg6InN0ZENsYXNzIjoyOntzOjc6InBsdWdpbnMiO086ODoic3RkQ2xhc3MiOjM6e3M6NjoiZmlsdGVyIjthOjQ6e3M6Njoic2VhcmNoIjtzOjY6IlN5c3RlbSI7czo3OiJlbmFibGVkIjtzOjA6IiI7czo2OiJmb2xkZXIiO3M6MDoiIjtzOjY6ImFjY2VzcyI7czowOiIiO31zOjQ6Imxpc3QiO2E6NDp7czoxMjoiZnVsbG9yZGVyaW5nIjtzOjEwOiJmb2xkZXIgQVNDIjtzOjU6ImxpbWl0IjtzOjI6IjIwIjtzOjk6InNvcnRUYWJsZSI7czo2OiJmb2xkZXIiO3M6MTQ6ImRpcmVjdGlvblRhYmxlIjtzOjM6IkFTQyI7fXM6MTA6ImxpbWl0c3RhcnQiO2k6MDt9czo0OiJlZGl0IjtPOjg6InN0ZENsYXNzIjoxOntzOjY6InBsdWdpbiI7Tzo4OiJzdGRDbGFzcyI6Mjp7czoyOiJpZCI7YToxOntpOjA7aTo0MjU7fXM6NDoiZGF0YSI7Tjt9fX1zOjk6ImNvbV91c2VycyI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJlZGl0IjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6InVzZXIiO086ODoic3RkQ2xhc3MiOjE6e3M6NDoiZGF0YSI7Tjt9fX19czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7Tzo1OiJKVXNlciI6Mjg6e3M6OToiACoAaXNSb290IjtiOjE7czoyOiJpZCI7czozOiI5MjEiO3M6NDoibmFtZSI7czoxMDoiU3VwZXIgVXNlciI7czo4OiJ1c2VybmFtZSI7czo1OiJhZG1pbiI7czo1OiJlbWFpbCI7czoxNToiYWRtaW5AbG9jYWxob3N0IjtzOjg6InBhc3N3b3JkIjtzOjYwOiIkMnkkMTAkaTBwRWNLRVl4NEduNnkwUkZUTXA3dXcuYVJUYXd6L2QwNlFnaE0uM0ZuY1gxL21aY3BmSmUiO3M6MTQ6InBhc3N3b3JkX2NsZWFyIjtzOjA6IiI7czo1OiJibG9jayI7czoxOiIwIjtzOjk6InNlbmRFbWFpbCI7czoxOiIxIjtzOjEyOiJyZWdpc3RlckRhdGUiO3M6MTk6IjIwMjAtMDktMDYgMTg6MjA6NDkiO3M6MTM6Imxhc3R2aXNpdERhdGUiO3M6MTk6IjIwMjAtMDktMTcgMTM6MDE6MDMiO3M6MTA6ImFjdGl2YXRpb24iO3M6MToiMCI7czo2OiJwYXJhbXMiO3M6MDoiIjtzOjY6Imdyb3VwcyI7YToxOntpOjg7czoxOiI4Ijt9czo1OiJndWVzdCI7aTowO3M6MTM6Imxhc3RSZXNldFRpbWUiO3M6MTk6IjAwMDAtMDAtMDAgMDA6MDA6MDAiO3M6MTA6InJlc2V0Q291bnQiO3M6MToiMCI7czoxMjoicmVxdWlyZVJlc2V0IjtzOjE6IjAiO3M6MTA6IgAqAF9wYXJhbXMiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mjp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjowOnt9czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6MTQ6IgAqAF9hdXRoR3JvdXBzIjthOjI6e2k6MDtpOjE7aToxO2k6ODt9czoxNDoiACoAX2F1dGhMZXZlbHMiO2E6NTp7aTowO2k6MTtpOjE7aToxO2k6MjtpOjI7aTozO2k6MztpOjQ7aTo2O31zOjE1OiIAKgBfYXV0aEFjdGlvbnMiO047czoxMjoiACoAX2Vycm9yTXNnIjtOO3M6MTM6IgAqAHVzZXJIZWxwZXIiO086MTg6IkpVc2VyV3JhcHBlckhlbHBlciI6MDp7fXM6MTA6IgAqAF9lcnJvcnMiO2E6MDp7fXM6MzoiYWlkIjtpOjA7czo2OiJvdHBLZXkiO3M6MDoiIjtzOjQ6Im90ZXAiO3M6MDoiIjt9czoxMToiYXBwbGljYXRpb24iO086ODoic3RkQ2xhc3MiOjE6e3M6NToicXVldWUiO047fX19czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==\";',921,'admin');
-INSERT INTO `jo_session` VALUES ('ae7e793c22cd9936230b1bba912dc42b',0,0,'1600381013','joomla|s:4200:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo1OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToyMztzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE2MDAzNzkxNTY7czo0OiJsYXN0IjtpOjE2MDAzODA5MjI7czozOiJub3ciO2k6MTYwMDM4MTAxMzt9czo1OiJ0b2tlbiI7czozMjoiVVhSdXlGQzRuUEVOVTl0V29ab0tMS3BCSnNERDd5RUciO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjI6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJ1c2VycyI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJsb2dpbiI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJmb3JtIjtPOjg6InN0ZENsYXNzIjoyOntzOjY6InJldHVybiI7czozMToiaHR0cDovL2xvY2FsaG9zdDozMDAxL2luZGV4LnBocCI7czo0OiJkYXRhIjthOjA6e319fX19czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7Tzo1OiJKVXNlciI6Mjg6e3M6OToiACoAaXNSb290IjtiOjA7czoyOiJpZCI7czozOiI5MjIiO3M6NDoibmFtZSI7czo3OiJ0ZXN0ZXIxIjtzOjg6InVzZXJuYW1lIjtzOjc6InRlc3RlcjEiO3M6NToiZW1haWwiO3M6MjE6InRlc3RlcjFAbG9jYWxob3N0LmNvbSI7czo4OiJwYXNzd29yZCI7czo2MDoiJDJ5JDEwJC5iQmFkWGZaNWNPMGQvSWlFMW1GSE9xWEdibEIwNVBpUjR6TWVsM3M0bUhpU244NExtc0FDIjtzOjE0OiJwYXNzd29yZF9jbGVhciI7czowOiIiO3M6NToiYmxvY2siO3M6MToiMCI7czo5OiJzZW5kRW1haWwiO3M6MToiMCI7czoxMjoicmVnaXN0ZXJEYXRlIjtzOjE5OiIyMDIwLTA5LTE3IDIyOjEwOjI2IjtzOjEzOiJsYXN0dmlzaXREYXRlIjtzOjE5OiIwMDAwLTAwLTAwIDAwOjAwOjAwIjtzOjEwOiJhY3RpdmF0aW9uIjtzOjA6IiI7czo2OiJwYXJhbXMiO3M6OTI6InsiYWRtaW5fc3R5bGUiOiIiLCJhZG1pbl9sYW5ndWFnZSI6IiIsImxhbmd1YWdlIjoiIiwiZWRpdG9yIjoiIiwiaGVscHNpdGUiOiIiLCJ0aW1lem9uZSI6IiJ9IjtzOjY6Imdyb3VwcyI7YToxOntpOjI7czoxOiIyIjt9czo1OiJndWVzdCI7aTowO3M6MTM6Imxhc3RSZXNldFRpbWUiO3M6MTk6IjAwMDAtMDAtMDAgMDA6MDA6MDAiO3M6MTA6InJlc2V0Q291bnQiO3M6MToiMCI7czoxMjoicmVxdWlyZVJlc2V0IjtzOjE6IjAiO3M6MTA6IgAqAF9wYXJhbXMiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mjp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjo2OntzOjExOiJhZG1pbl9zdHlsZSI7czowOiIiO3M6MTQ6ImFkbWluX2xhbmd1YWdlIjtzOjA6IiI7czo4OiJsYW5ndWFnZSI7czowOiIiO3M6NjoiZWRpdG9yIjtzOjA6IiI7czo4OiJoZWxwc2l0ZSI7czowOiIiO3M6ODoidGltZXpvbmUiO3M6MDoiIjt9czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6MTQ6IgAqAF9hdXRoR3JvdXBzIjthOjI6e2k6MDtpOjE7aToxO2k6Mjt9czoxNDoiACoAX2F1dGhMZXZlbHMiO2E6Mzp7aTowO2k6MTtpOjE7aToxO2k6MjtpOjI7fXM6MTU6IgAqAF9hdXRoQWN0aW9ucyI7TjtzOjEyOiIAKgBfZXJyb3JNc2ciO047czoxMzoiACoAdXNlckhlbHBlciI7TzoxODoiSlVzZXJXcmFwcGVySGVscGVyIjowOnt9czoxMDoiACoAX2Vycm9ycyI7YTowOnt9czozOiJhaWQiO2k6MDtzOjY6Im90cEtleSI7czowOiIiO3M6NDoib3RlcCI7czowOiIiO31zOjEwOiJjb21fbWFpbHRvIjtPOjg6InN0ZENsYXNzIjoxOntzOjU6ImxpbmtzIjthOjc6e3M6NDA6IjU1MzE0MzhkNTcyMmY5MGFhOTA3M2ZkOWQ5MmYzMjI2MjM4YThhZGQiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoibGluayI7czo0NDoiaHR0cDovL2xvY2FsaG9zdDozMDAxL2luZGV4LnBocC9zYW1wbGUtc2l0ZXMiO3M6NjoiZXhwaXJ5IjtpOjE2MDAzNzkxODc7fXM6NDA6IjQ2NTdhMmYwZTdhODAyZTJmMDM3NzQwMTU3OGNhMzliNTIzNTJlYmYiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoibGluayI7czo2MDoiaHR0cDovL2xvY2FsaG9zdDozMDAxL2luZGV4LnBocC9wYXJrLWJsb2cvMTctZmlyc3QtYmxvZy1wb3N0IjtzOjY6ImV4cGlyeSI7aToxNjAwMzc5MTk1O31zOjQwOiIwNzcyZTMyMzY2OWU0Y2M5OTYyNzEyMGRjNTFjOTMwZDJjZmI0MGM2IjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImxpbmsiO3M6NjE6Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMS9pbmRleC5waHAvcGFyay1ibG9nLzE4LXNlY29uZC1ibG9nLXBvc3QiO3M6NjoiZXhwaXJ5IjtpOjE2MDAzNzkxOTU7fXM6NDA6ImM1ZWFlM2QzYjNhODA2YWI1Y2I4MjQ4NDRjNTNiZGJmNDUwOWU5MTUiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoibGluayI7czo2MjoiaHR0cDovL2xvY2FsaG9zdDozMDAxL2luZGV4LnBocC9pbWFnZS1nYWxsZXJ5L2FuaW1hbHMvMjUta29hbGEiO3M6NjoiZXhwaXJ5IjtpOjE2MDAzNzkxOTg7fXM6NDA6ImIxMzY4YWZlYTE1MWQ1MmMxZDA5Yzk0ZmNlNjk0Mjk3Zjk4OTE1MTkiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoibGluayI7czo2OToiaHR0cDovL2xvY2FsaG9zdDozMDAxL2luZGV4LnBocC9pbWFnZS1nYWxsZXJ5L2FuaW1hbHMvMzMtcGh5bGxvcHRlcnl4IjtzOjY6ImV4cGlyeSI7aToxNjAwMzc5MTk4O31zOjQwOiJmMDY0ZDk1ZDYwMWY5MjM3ODgwM2IxY2JiNDM2NGMxMWNiY2Y2NzM3IjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImxpbmsiO3M6NzA6Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMS9pbmRleC5waHAvaW1hZ2UtZ2FsbGVyeS9hbmltYWxzLzQzLXNwb3R0ZWQtcXVvbGwiO3M6NjoiZXhwaXJ5IjtpOjE2MDAzNzkxOTg7fXM6NDA6IjQyYTZmODdmZmM4NGMxYThkNmJkNDgxMDFjMWRiNWE4Y2FlOTIzYjIiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoibGluayI7czo2NjoiaHR0cDovL2xvY2FsaG9zdDozMDAxL2luZGV4LnBocC9pbWFnZS1nYWxsZXJ5L2FuaW1hbHMvNTctd29iYmVnb25lIjtzOjY6ImV4cGlyeSI7aToxNjAwMzc5MTk4O319fXM6MTE6ImFwcGxpY2F0aW9uIjtPOjg6InN0ZENsYXNzIjoxOntzOjU6InF1ZXVlIjtOO319fXM6OToic2VwYXJhdG9yIjtzOjE6Ii4iO30=\";',922,'tester1');
+INSERT INTO `jo_session` VALUES ('2d432c0d7b576d505373332ea0dc2739',0,1,'1600433466','joomla|s:1832:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToyO3M6NToidGltZXIiO086ODoic3RkQ2xhc3MiOjM6e3M6NToic3RhcnQiO2k6MTYwMDQzMzQ1OTtzOjQ6Imxhc3QiO2k6MTYwMDQzMzQ1OTtzOjM6Im5vdyI7aToxNjAwNDMzNDY2O31zOjU6InRva2VuIjtzOjMyOiJHNVZiSGE4VWR5SVYyWXZHZmExVGhwN0VkazFBZlQwZCI7fXM6ODoicmVnaXN0cnkiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mjp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjowOnt9czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7Tzo1OiJKVXNlciI6MjY6e3M6OToiACoAaXNSb290IjtiOjA7czoyOiJpZCI7aTowO3M6NDoibmFtZSI7TjtzOjg6InVzZXJuYW1lIjtOO3M6NToiZW1haWwiO047czo4OiJwYXNzd29yZCI7TjtzOjE0OiJwYXNzd29yZF9jbGVhciI7czowOiIiO3M6NToiYmxvY2siO047czo5OiJzZW5kRW1haWwiO2k6MDtzOjEyOiJyZWdpc3RlckRhdGUiO047czoxMzoibGFzdHZpc2l0RGF0ZSI7TjtzOjEwOiJhY3RpdmF0aW9uIjtOO3M6NjoicGFyYW1zIjtOO3M6NjoiZ3JvdXBzIjthOjE6e2k6MDtzOjI6IjEzIjt9czo1OiJndWVzdCI7aToxO3M6MTM6Imxhc3RSZXNldFRpbWUiO047czoxMDoicmVzZXRDb3VudCI7TjtzOjEyOiJyZXF1aXJlUmVzZXQiO047czoxMDoiACoAX3BhcmFtcyI7TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjA6e31zOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czoxNDoiACoAX2F1dGhHcm91cHMiO2E6Mjp7aTowO2k6MTtpOjE7aToxMzt9czoxNDoiACoAX2F1dGhMZXZlbHMiO2E6Mzp7aTowO2k6MTtpOjE7aToxO2k6MjtpOjU7fXM6MTU6IgAqAF9hdXRoQWN0aW9ucyI7TjtzOjEyOiIAKgBfZXJyb3JNc2ciO047czoxMzoiACoAdXNlckhlbHBlciI7TzoxODoiSlVzZXJXcmFwcGVySGVscGVyIjowOnt9czoxMDoiACoAX2Vycm9ycyI7YTowOnt9czozOiJhaWQiO2k6MDt9czoxMDoiY29tX21haWx0byI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJsaW5rcyI7YToxOntzOjQwOiJkZGJmOWRlNzE4Y2EyMjFmZDc4YTZhZDA3NDRmZDk1ZDZjMTBhMmJjIjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImxpbmsiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMS9pbmRleC5waHAvdGVzdC1wYWdlIjtzOjY6ImV4cGlyeSI7aToxNjAwNDMzNDY2O319fX19czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==\";',0,'');
+INSERT INTO `jo_session` VALUES ('33fd3fba222631fc3d5330e5b9d6ccba',1,0,'1600433870','joomla|s:4964:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToxNDE7czo1OiJ0aW1lciI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo1OiJzdGFydCI7aToxNjAwNDMyMTM1O3M6NDoibGFzdCI7aToxNjAwNDMzODY3O3M6Mzoibm93IjtpOjE2MDA0MzM4NzA7fXM6NToidG9rZW4iO3M6MzI6Ild1ZW4zdVIzWDA4NER6Q2dxMEJRRVlsaVFGY1YzUUlTIjt9czo4OiJyZWdpc3RyeSI7TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjY6e3M6MTM6ImNvbV9pbnN0YWxsZXIiO086ODoic3RkQ2xhc3MiOjU6e3M6NzoibWVzc2FnZSI7czowOiIiO3M6MTc6ImV4dGVuc2lvbl9tZXNzYWdlIjtzOjA6IiI7czo3OiJpbnN0YWxsIjtPOjg6InN0ZENsYXNzIjoxOntzOjE3OiJpbnN0YWxsX2RpcmVjdG9yeSI7czo1MDoiL1VzZXJzL3plZGVuZy9zcmMvemVtaWFuL2xlYXJuLWpvb21sYS9tb2RfbXltb2R1bGUiO31zOjEyOiJyZWRpcmVjdF91cmwiO047czo2OiJtYW5hZ2UiO086ODoic3RkQ2xhc3MiOjM6e3M6NjoiZmlsdGVyIjthOjU6e3M6Njoic2VhcmNoIjtzOjA6IiI7czo5OiJjbGllbnRfaWQiO3M6MDoiIjtzOjY6InN0YXR1cyI7czowOiIiO3M6NDoidHlwZSI7czowOiIiO3M6NjoiZm9sZGVyIjtzOjA6IiI7fXM6NDoibGlzdCI7YToyOntzOjEyOiJmdWxsb3JkZXJpbmciO3M6ODoibmFtZSBBU0MiO3M6NToibGltaXQiO3M6MjoiMjAiO31zOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fX1zOjExOiJjb21fbW9kdWxlcyI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo3OiJtb2R1bGVzIjtPOjg6InN0ZENsYXNzIjo0OntzOjY6ImZpbHRlciI7YTo2OntzOjY6InNlYXJjaCI7czowOiIiO3M6NToic3RhdGUiO3M6MDoiIjtzOjg6InBvc2l0aW9uIjtzOjA6IiI7czo2OiJtb2R1bGUiO3M6MDoiIjtzOjY6ImFjY2VzcyI7czowOiIiO3M6ODoibGFuZ3VhZ2UiO3M6MDoiIjt9czo5OiJjbGllbnRfaWQiO3M6MToiMCI7czo0OiJsaXN0IjthOjI6e3M6MTI6ImZ1bGxvcmRlcmluZyI7czoxMjoicG9zaXRpb24gQVNDIjtzOjU6ImxpbWl0IjtzOjI6IjIwIjt9czoxMDoibGltaXRzdGFydCI7aTowO31zOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NjoibW9kdWxlIjtPOjg6InN0ZENsYXNzIjoyOntzOjI6ImlkIjthOjA6e31zOjQ6ImRhdGEiO047fX1zOjM6ImFkZCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo2OiJtb2R1bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MTI6ImV4dGVuc2lvbl9pZCI7TjtzOjY6InBhcmFtcyI7Tjt9fX1zOjExOiJjb21fY29udGVudCI7Tzo4OiJzdGRDbGFzcyI6Mjp7czo0OiJlZGl0IjtPOjg6InN0ZENsYXNzIjoxOntzOjc6ImFydGljbGUiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoiZGF0YSI7TjtzOjI6ImlkIjthOjA6e319fXM6ODoiYXJ0aWNsZXMiO086ODoic3RkQ2xhc3MiOjM6e3M6NjoiZmlsdGVyIjthOjg6e3M6Njoic2VhcmNoIjtzOjk6IlRlc3QgUGFnZSI7czo5OiJwdWJsaXNoZWQiO3M6MDoiIjtzOjExOiJjYXRlZ29yeV9pZCI7czowOiIiO3M6NjoiYWNjZXNzIjtzOjA6IiI7czo4OiJsYW5ndWFnZSI7czowOiIiO3M6MzoidGFnIjtzOjA6IiI7czo5OiJhdXRob3JfaWQiO3M6MDoiIjtzOjU6ImxldmVsIjtzOjA6IiI7fXM6NDoibGlzdCI7YToyOntzOjEyOiJmdWxsb3JkZXJpbmciO3M6OToiYS5pZCBERVNDIjtzOjU6ImxpbWl0IjtzOjI6IjIwIjt9czoxMDoibGltaXRzdGFydCI7aTowO319czo5OiJjb21fbWVudXMiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoiZWRpdCI7Tzo4OiJzdGRDbGFzcyI6Mjp7czo0OiJtZW51IjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImRhdGEiO047czoyOiJpZCI7YTowOnt9fXM6NDoiaXRlbSI7Tzo4OiJzdGRDbGFzcyI6NDp7czo0OiJkYXRhIjtOO3M6NDoidHlwZSI7TjtzOjQ6ImxpbmsiO047czoyOiJpZCI7YTowOnt9fX1zOjU6Iml0ZW1zIjtPOjg6InN0ZENsYXNzIjozOntzOjg6Im1lbnV0eXBlIjtzOjg6Im1haW5tZW51IjtzOjEwOiJsaW1pdHN0YXJ0IjtpOjA7czo0OiJsaXN0IjthOjQ6e3M6OToiZGlyZWN0aW9uIjtzOjM6ImFzYyI7czo1OiJsaW1pdCI7czoyOiIyMCI7czo4OiJvcmRlcmluZyI7czo1OiJhLmxmdCI7czo1OiJzdGFydCI7ZDowO319fXM6NDoiaXRlbSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo2OiJmaWx0ZXIiO086ODoic3RkQ2xhc3MiOjE6e3M6ODoibWVudXR5cGUiO3M6ODoibWFpbm1lbnUiO319czo5OiJjb21fdXNlcnMiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoiZWRpdCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJ1c2VyIjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6ImRhdGEiO047fX1zOjk6ImRlYnVndXNlciI7Tzo4OiJzdGRDbGFzcyI6MTp7czo3OiJkZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjY6ImZpbHRlciI7Tzo4OiJzdGRDbGFzcyI6MTp7czo3OiJ1c2VyX2lkIjtpOjkyMzt9czo4OiJvcmRlcmNvbCI7czo1OiJhLmxmdCI7czoxMDoibGltaXRzdGFydCI7aTowO319fX1zOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czo0OiJ1c2VyIjtPOjU6IkpVc2VyIjoyODp7czo5OiIAKgBpc1Jvb3QiO2I6MTtzOjI6ImlkIjtzOjM6IjkyMSI7czo0OiJuYW1lIjtzOjEwOiJTdXBlciBVc2VyIjtzOjg6InVzZXJuYW1lIjtzOjU6ImFkbWluIjtzOjU6ImVtYWlsIjtzOjE1OiJhZG1pbkBsb2NhbGhvc3QiO3M6ODoicGFzc3dvcmQiO3M6NjA6IiQyeSQxMCRpMHBFY0tFWXg0R242eTBSRlRNcDd1dy5hUlRhd3ovZDA2UWdoTS4zRm5jWDEvbVpjcGZKZSI7czoxNDoicGFzc3dvcmRfY2xlYXIiO3M6MDoiIjtzOjU6ImJsb2NrIjtzOjE6IjAiO3M6OToic2VuZEVtYWlsIjtzOjE6IjEiO3M6MTI6InJlZ2lzdGVyRGF0ZSI7czoxOToiMjAyMC0wOS0wNiAxODoyMDo0OSI7czoxMzoibGFzdHZpc2l0RGF0ZSI7czoxOToiMjAyMC0wOS0xNyAyMTo0NzoxOSI7czoxMDoiYWN0aXZhdGlvbiI7czoxOiIwIjtzOjY6InBhcmFtcyI7czowOiIiO3M6NjoiZ3JvdXBzIjthOjE6e2k6ODtzOjE6IjgiO31zOjU6Imd1ZXN0IjtpOjA7czoxMzoibGFzdFJlc2V0VGltZSI7czoxOToiMDAwMC0wMC0wMCAwMDowMDowMCI7czoxMDoicmVzZXRDb3VudCI7czoxOiIwIjtzOjEyOiJyZXF1aXJlUmVzZXQiO3M6MToiMCI7czoxMDoiACoAX3BhcmFtcyI7TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjA6e31zOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czoxNDoiACoAX2F1dGhHcm91cHMiO2E6Mjp7aTowO2k6MTtpOjE7aTo4O31zOjE0OiIAKgBfYXV0aExldmVscyI7YTo1OntpOjA7aToxO2k6MTtpOjE7aToyO2k6MjtpOjM7aTozO2k6NDtpOjY7fXM6MTU6IgAqAF9hdXRoQWN0aW9ucyI7TjtzOjEyOiIAKgBfZXJyb3JNc2ciO047czoxMzoiACoAdXNlckhlbHBlciI7TzoxODoiSlVzZXJXcmFwcGVySGVscGVyIjowOnt9czoxMDoiACoAX2Vycm9ycyI7YTowOnt9czozOiJhaWQiO2k6MDtzOjY6Im90cEtleSI7czowOiIiO3M6NDoib3RlcCI7czowOiIiO31zOjExOiJhcHBsaWNhdGlvbiI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJxdWV1ZSI7Tjt9fX1zOjk6InNlcGFyYXRvciI7czoxOiIuIjt9\";',921,'admin');
 /*!40000 ALTER TABLE `jo_session` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3018,7 +3025,7 @@ CREATE TABLE `jo_ucm_history` (
   PRIMARY KEY (`version_id`),
   KEY `idx_ucm_item_id` (`ucm_type_id`,`ucm_item_id`),
   KEY `idx_save_date` (`save_date`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3028,6 +3035,7 @@ CREATE TABLE `jo_ucm_history` (
 LOCK TABLES `jo_ucm_history` WRITE;
 /*!40000 ALTER TABLE `jo_ucm_history` DISABLE KEYS */;
 set autocommit=0;
+INSERT INTO `jo_ucm_history` VALUES (1,71,1,'','2020-09-18 12:45:36',921,1680,'e02e8f0ce40caa1c63580b894c317d016ad3c9db','{\"id\":71,\"asset_id\":186,\"title\":\"Test Page\",\"alias\":\"test-page\",\"introtext\":\"<p>Just a test<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"14\",\"created\":\"2020-09-18 12:45:36\",\"created_by\":\"921\",\"created_by_alias\":\"\",\"modified\":\"2020-09-18 12:45:36\",\"modified_by\":null,\"checked_out\":null,\"checked_out_time\":null,\"publish_up\":\"2020-09-18 12:45:36\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_layout\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\"}\",\"version\":1,\"ordering\":null,\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":null,\"metadata\":\"{\\\"robots\\\":\\\"\\\",\\\"author\\\":\\\"\\\",\\\"rights\\\":\\\"\\\",\\\"xreference\\\":\\\"\\\"}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\"}',0);
 /*!40000 ALTER TABLE `jo_ucm_history` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3058,11 +3066,11 @@ CREATE TABLE `jo_update_sites` (
 LOCK TABLES `jo_update_sites` WRITE;
 /*!40000 ALTER TABLE `jo_update_sites` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `jo_update_sites` VALUES (1,'Joomla! Core','collection','http://update.joomla.org/core/list.xml',1,1600381011,'');
-INSERT INTO `jo_update_sites` VALUES (2,'Joomla! Extension Directory','collection','http://update.joomla.org/jed/list.xml',1,1600381011,'');
-INSERT INTO `jo_update_sites` VALUES (3,'Accredited Joomla! Translations','collection','http://update.joomla.org/language/translationlist_3.xml',1,0,'');
-INSERT INTO `jo_update_sites` VALUES (4,'Joomla! Update Component Update Site','extension','http://update.joomla.org/core/extensions/com_joomlaupdate.xml',1,0,'');
-INSERT INTO `jo_update_sites` VALUES (6,'Ola Update Site','extension','http://yourdomain.com/update/ola-update.xml',1,0,'');
+INSERT INTO `jo_update_sites` VALUES (1,'Joomla! Core','collection','http://update.joomla.org/core/list.xml',0,0,'');
+INSERT INTO `jo_update_sites` VALUES (2,'Joomla! Extension Directory','collection','http://update.joomla.org/jed/list.xml',1,1600433828,'');
+INSERT INTO `jo_update_sites` VALUES (3,'Accredited Joomla! Translations','collection','http://update.joomla.org/language/translationlist_3.xml',1,1600433828,'');
+INSERT INTO `jo_update_sites` VALUES (4,'Joomla! Update Component Update Site','extension','http://update.joomla.org/core/extensions/com_joomlaupdate.xml',1,1600433828,'');
+INSERT INTO `jo_update_sites` VALUES (6,'Ola Update Site','extension','http://yourdomain.com/update/ola-update.xml',1,1600433828,'');
 /*!40000 ALTER TABLE `jo_update_sites` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3120,7 +3128,7 @@ CREATE TABLE `jo_updates` (
   `infourl` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `extra_query` varchar(1000) COLLATE utf8mb4_unicode_ci DEFAULT '',
   PRIMARY KEY (`update_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Available Updates';
+) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Available Updates';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3130,7 +3138,83 @@ CREATE TABLE `jo_updates` (
 LOCK TABLES `jo_updates` WRITE;
 /*!40000 ALTER TABLE `jo_updates` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `jo_updates` VALUES (1,1,700,'Joomla','','joomla','file','',0,'3.6.5','','https://update.joomla.org/core/sts/extension_sts.xml','','');
+INSERT INTO `jo_updates` VALUES (1,3,0,'Armenian','','pkg_hy-AM','package','',0,'3.4.4.1','','https://update.joomla.org/language/details3/hy-AM_details.xml','','');
+INSERT INTO `jo_updates` VALUES (2,3,0,'Malay','','pkg_ms-MY','package','',0,'3.4.1.2','','https://update.joomla.org/language/details3/ms-MY_details.xml','','');
+INSERT INTO `jo_updates` VALUES (3,3,0,'Romanian','','pkg_ro-RO','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/ro-RO_details.xml','','');
+INSERT INTO `jo_updates` VALUES (4,3,0,'Flemish','','pkg_nl-BE','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/nl-BE_details.xml','','');
+INSERT INTO `jo_updates` VALUES (5,3,0,'Chinese Traditional','','pkg_zh-TW','package','',0,'3.8.0.1','','https://update.joomla.org/language/details3/zh-TW_details.xml','','');
+INSERT INTO `jo_updates` VALUES (6,3,0,'French','','pkg_fr-FR','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/fr-FR_details.xml','','');
+INSERT INTO `jo_updates` VALUES (7,3,0,'Galician','','pkg_gl-ES','package','',0,'3.3.1.2','','https://update.joomla.org/language/details3/gl-ES_details.xml','','');
+INSERT INTO `jo_updates` VALUES (8,3,0,'Georgian','','pkg_ka-GE','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/ka-GE_details.xml','','');
+INSERT INTO `jo_updates` VALUES (9,3,0,'Greek','','pkg_el-GR','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/el-GR_details.xml','','');
+INSERT INTO `jo_updates` VALUES (10,3,0,'Japanese','','pkg_ja-JP','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/ja-JP_details.xml','','');
+INSERT INTO `jo_updates` VALUES (11,3,0,'Hebrew','','pkg_he-IL','package','',0,'3.1.1.2','','https://update.joomla.org/language/details3/he-IL_details.xml','','');
+INSERT INTO `jo_updates` VALUES (12,3,0,'Bengali','','pkg_bn-BD','package','',0,'3.8.10.1','','https://update.joomla.org/language/details3/bn-BD_details.xml','','');
+INSERT INTO `jo_updates` VALUES (13,3,0,'Hungarian','','pkg_hu-HU','package','',0,'3.9.19.1','','https://update.joomla.org/language/details3/hu-HU_details.xml','','');
+INSERT INTO `jo_updates` VALUES (14,3,0,'Afrikaans','','pkg_af-ZA','package','',0,'3.9.16.1','','https://update.joomla.org/language/details3/af-ZA_details.xml','','');
+INSERT INTO `jo_updates` VALUES (15,3,0,'Arabic Unitag','','pkg_ar-AA','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/ar-AA_details.xml','','');
+INSERT INTO `jo_updates` VALUES (16,3,0,'Belarusian','','pkg_be-BY','package','',0,'3.2.1.2','','https://update.joomla.org/language/details3/be-BY_details.xml','','');
+INSERT INTO `jo_updates` VALUES (17,3,0,'Bulgarian','','pkg_bg-BG','package','',0,'3.6.5.2','','https://update.joomla.org/language/details3/bg-BG_details.xml','','');
+INSERT INTO `jo_updates` VALUES (18,3,0,'Catalan','','pkg_ca-ES','package','',0,'3.9.11.2','','https://update.joomla.org/language/details3/ca-ES_details.xml','','');
+INSERT INTO `jo_updates` VALUES (19,3,0,'Chinese Simplified','','pkg_zh-CN','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/zh-CN_details.xml','','');
+INSERT INTO `jo_updates` VALUES (20,3,0,'Croatian','','pkg_hr-HR','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/hr-HR_details.xml','','');
+INSERT INTO `jo_updates` VALUES (21,3,0,'Czech','','pkg_cs-CZ','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/cs-CZ_details.xml','','');
+INSERT INTO `jo_updates` VALUES (22,3,0,'Danish','','pkg_da-DK','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/da-DK_details.xml','','');
+INSERT INTO `jo_updates` VALUES (23,3,0,'Dutch','','pkg_nl-NL','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/nl-NL_details.xml','','');
+INSERT INTO `jo_updates` VALUES (24,3,0,'Esperanto','','pkg_eo-XX','package','',0,'3.8.11.1','','https://update.joomla.org/language/details3/eo-XX_details.xml','','');
+INSERT INTO `jo_updates` VALUES (25,3,0,'Estonian','','pkg_et-EE','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/et-EE_details.xml','','');
+INSERT INTO `jo_updates` VALUES (26,3,0,'Italian','','pkg_it-IT','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/it-IT_details.xml','','');
+INSERT INTO `jo_updates` VALUES (27,3,0,'Khmer','','pkg_km-KH','package','',0,'3.4.5.1','','https://update.joomla.org/language/details3/km-KH_details.xml','','');
+INSERT INTO `jo_updates` VALUES (28,3,0,'Korean','','pkg_ko-KR','package','',0,'3.8.9.1','','https://update.joomla.org/language/details3/ko-KR_details.xml','','');
+INSERT INTO `jo_updates` VALUES (29,3,0,'Latvian','','pkg_lv-LV','package','',0,'3.7.3.1','','https://update.joomla.org/language/details3/lv-LV_details.xml','','');
+INSERT INTO `jo_updates` VALUES (30,3,0,'Lithuanian','','pkg_lt-LT','package','',0,'3.9.16.1','','https://update.joomla.org/language/details3/lt-LT_details.xml','','');
+INSERT INTO `jo_updates` VALUES (31,3,0,'Macedonian','','pkg_mk-MK','package','',0,'3.6.5.1','','https://update.joomla.org/language/details3/mk-MK_details.xml','','');
+INSERT INTO `jo_updates` VALUES (32,3,0,'Norwegian Bokmal','','pkg_nb-NO','package','',0,'3.8.11.1','','https://update.joomla.org/language/details3/nb-NO_details.xml','','');
+INSERT INTO `jo_updates` VALUES (33,3,0,'Norwegian Nynorsk','','pkg_nn-NO','package','',0,'3.4.2.1','','https://update.joomla.org/language/details3/nn-NO_details.xml','','');
+INSERT INTO `jo_updates` VALUES (34,3,0,'Persian','','pkg_fa-IR','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/fa-IR_details.xml','','');
+INSERT INTO `jo_updates` VALUES (35,3,0,'Polish','','pkg_pl-PL','package','',0,'3.9.13.1','','https://update.joomla.org/language/details3/pl-PL_details.xml','','');
+INSERT INTO `jo_updates` VALUES (36,3,0,'Portuguese','','pkg_pt-PT','package','',0,'3.9.15.1','','https://update.joomla.org/language/details3/pt-PT_details.xml','','');
+INSERT INTO `jo_updates` VALUES (37,3,0,'Russian','','pkg_ru-RU','package','',0,'3.9.21.2','','https://update.joomla.org/language/details3/ru-RU_details.xml','','');
+INSERT INTO `jo_updates` VALUES (38,3,0,'English AU','','pkg_en-AU','package','',0,'3.9.20.1','','https://update.joomla.org/language/details3/en-AU_details.xml','','');
+INSERT INTO `jo_updates` VALUES (39,3,0,'Slovak','','pkg_sk-SK','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/sk-SK_details.xml','','');
+INSERT INTO `jo_updates` VALUES (40,3,0,'English US','','pkg_en-US','package','',0,'3.9.20.1','','https://update.joomla.org/language/details3/en-US_details.xml','','');
+INSERT INTO `jo_updates` VALUES (41,3,0,'Swedish','','pkg_sv-SE','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/sv-SE_details.xml','','');
+INSERT INTO `jo_updates` VALUES (42,3,0,'Syriac','','pkg_sy-IQ','package','',0,'3.4.5.1','','https://update.joomla.org/language/details3/sy-IQ_details.xml','','');
+INSERT INTO `jo_updates` VALUES (43,3,0,'Tamil','','pkg_ta-IN','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/ta-IN_details.xml','','');
+INSERT INTO `jo_updates` VALUES (44,3,0,'Thai','','pkg_th-TH','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/th-TH_details.xml','','');
+INSERT INTO `jo_updates` VALUES (45,3,0,'Turkish','','pkg_tr-TR','package','',0,'3.9.4.1','','https://update.joomla.org/language/details3/tr-TR_details.xml','','');
+INSERT INTO `jo_updates` VALUES (46,3,0,'Ukrainian','','pkg_uk-UA','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/uk-UA_details.xml','','');
+INSERT INTO `jo_updates` VALUES (47,3,0,'Uyghur','','pkg_ug-CN','package','',0,'3.7.5.2','','https://update.joomla.org/language/details3/ug-CN_details.xml','','');
+INSERT INTO `jo_updates` VALUES (48,3,0,'Albanian','','pkg_sq-AL','package','',0,'3.1.1.2','','https://update.joomla.org/language/details3/sq-AL_details.xml','','');
+INSERT INTO `jo_updates` VALUES (49,3,0,'Basque','','pkg_eu-ES','package','',0,'3.7.5.1','','https://update.joomla.org/language/details3/eu-ES_details.xml','','');
+INSERT INTO `jo_updates` VALUES (50,3,0,'Hindi','','pkg_hi-IN','package','',0,'3.3.6.2','','https://update.joomla.org/language/details3/hi-IN_details.xml','','');
+INSERT INTO `jo_updates` VALUES (51,3,0,'German DE','','pkg_de-DE','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/de-DE_details.xml','','');
+INSERT INTO `jo_updates` VALUES (52,3,0,'Portuguese Brazil','','pkg_pt-BR','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/pt-BR_details.xml','','');
+INSERT INTO `jo_updates` VALUES (53,3,0,'Serbian Latin','','pkg_sr-YU','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/sr-YU_details.xml','','');
+INSERT INTO `jo_updates` VALUES (54,3,0,'Spanish','','pkg_es-ES','package','',0,'3.9.18.1','','https://update.joomla.org/language/details3/es-ES_details.xml','','');
+INSERT INTO `jo_updates` VALUES (55,3,0,'Bosnian','','pkg_bs-BA','package','',0,'3.9.20.1','','https://update.joomla.org/language/details3/bs-BA_details.xml','','');
+INSERT INTO `jo_updates` VALUES (56,3,0,'Serbian Cyrillic','','pkg_sr-RS','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/sr-RS_details.xml','','');
+INSERT INTO `jo_updates` VALUES (57,3,0,'Vietnamese','','pkg_vi-VN','package','',0,'3.2.1.2','','https://update.joomla.org/language/details3/vi-VN_details.xml','','');
+INSERT INTO `jo_updates` VALUES (58,3,0,'Bahasa Indonesia','','pkg_id-ID','package','',0,'3.6.2.1','','https://update.joomla.org/language/details3/id-ID_details.xml','','');
+INSERT INTO `jo_updates` VALUES (59,3,0,'Finnish','','pkg_fi-FI','package','',0,'3.9.16.1','','https://update.joomla.org/language/details3/fi-FI_details.xml','','');
+INSERT INTO `jo_updates` VALUES (60,3,0,'Swahili','','pkg_sw-KE','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/sw-KE_details.xml','','');
+INSERT INTO `jo_updates` VALUES (61,3,0,'Montenegrin','','pkg_srp-ME','package','',0,'3.3.1.2','','https://update.joomla.org/language/details3/srp-ME_details.xml','','');
+INSERT INTO `jo_updates` VALUES (62,3,0,'English CA','','pkg_en-CA','package','',0,'3.9.20.1','','https://update.joomla.org/language/details3/en-CA_details.xml','','');
+INSERT INTO `jo_updates` VALUES (63,3,0,'French CA','','pkg_fr-CA','package','',0,'3.6.5.1','','https://update.joomla.org/language/details3/fr-CA_details.xml','','');
+INSERT INTO `jo_updates` VALUES (64,3,0,'Welsh','','pkg_cy-GB','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/cy-GB_details.xml','','');
+INSERT INTO `jo_updates` VALUES (65,3,0,'Sinhala','','pkg_si-LK','package','',0,'3.3.1.2','','https://update.joomla.org/language/details3/si-LK_details.xml','','');
+INSERT INTO `jo_updates` VALUES (66,3,0,'Dari Persian','','pkg_prs-AF','package','',0,'3.4.4.3','','https://update.joomla.org/language/details3/prs-AF_details.xml','','');
+INSERT INTO `jo_updates` VALUES (67,3,0,'Turkmen','','pkg_tk-TM','package','',0,'3.5.0.2','','https://update.joomla.org/language/details3/tk-TM_details.xml','','');
+INSERT INTO `jo_updates` VALUES (68,3,0,'Irish','','pkg_ga-IE','package','',0,'3.8.13.1','','https://update.joomla.org/language/details3/ga-IE_details.xml','','');
+INSERT INTO `jo_updates` VALUES (69,3,0,'Dzongkha','','pkg_dz-BT','package','',0,'3.6.2.1','','https://update.joomla.org/language/details3/dz-BT_details.xml','','');
+INSERT INTO `jo_updates` VALUES (70,3,0,'Slovenian','','pkg_sl-SI','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/sl-SI_details.xml','','');
+INSERT INTO `jo_updates` VALUES (71,3,0,'Spanish CO','','pkg_es-CO','package','',0,'3.9.15.1','','https://update.joomla.org/language/details3/es-CO_details.xml','','');
+INSERT INTO `jo_updates` VALUES (72,3,0,'German CH','','pkg_de-CH','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/de-CH_details.xml','','');
+INSERT INTO `jo_updates` VALUES (73,3,0,'German AT','','pkg_de-AT','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/de-AT_details.xml','','');
+INSERT INTO `jo_updates` VALUES (74,3,0,'German LI','','pkg_de-LI','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/de-LI_details.xml','','');
+INSERT INTO `jo_updates` VALUES (75,3,0,'German LU','','pkg_de-LU','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/de-LU_details.xml','','');
+INSERT INTO `jo_updates` VALUES (76,3,0,'English NZ','','pkg_en-NZ','package','',0,'3.9.20.1','','https://update.joomla.org/language/details3/en-NZ_details.xml','','');
+INSERT INTO `jo_updates` VALUES (77,3,0,'Kazakh','','pkg_kk-KZ','package','',0,'3.9.21.1','','https://update.joomla.org/language/details3/kk-KZ_details.xml','','');
 /*!40000 ALTER TABLE `jo_updates` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3259,6 +3343,8 @@ LOCK TABLES `jo_user_usergroup_map` WRITE;
 set autocommit=0;
 INSERT INTO `jo_user_usergroup_map` VALUES (921,8);
 INSERT INTO `jo_user_usergroup_map` VALUES (922,2);
+INSERT INTO `jo_user_usergroup_map` VALUES (923,2);
+INSERT INTO `jo_user_usergroup_map` VALUES (923,7);
 /*!40000 ALTER TABLE `jo_user_usergroup_map` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3335,7 +3421,7 @@ CREATE TABLE `jo_users` (
   KEY `idx_block` (`block`),
   KEY `username` (`username`),
   KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=923 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=924 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3345,8 +3431,9 @@ CREATE TABLE `jo_users` (
 LOCK TABLES `jo_users` WRITE;
 /*!40000 ALTER TABLE `jo_users` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `jo_users` VALUES (921,'Super User','admin','admin@localhost','$2y$10$i0pEcKEYx4Gn6y0RFTMp7uw.aRTawz/d06QghM.3FncX1/mZcpfJe',0,1,'2020-09-06 18:20:49','2020-09-17 21:47:19','0','','0000-00-00 00:00:00',0,'','',0);
+INSERT INTO `jo_users` VALUES (921,'Super User','admin','admin@localhost','$2y$10$i0pEcKEYx4Gn6y0RFTMp7uw.aRTawz/d06QghM.3FncX1/mZcpfJe',0,1,'2020-09-06 18:20:49','2020-09-18 12:29:04','0','','0000-00-00 00:00:00',0,'','',0);
 INSERT INTO `jo_users` VALUES (922,'tester1','tester1','tester1@localhost.com','$2y$10$.bBadXfZ5cO0d/IiE1mFHOqXGblB05PiR4zMel3s4mHiSn84LmsAC',0,0,'2020-09-17 22:10:26','2020-09-17 22:10:39','','{\"admin_style\":\"\",\"admin_language\":\"\",\"language\":\"\",\"editor\":\"\",\"helpsite\":\"\",\"timezone\":\"\"}','0000-00-00 00:00:00',0,'','',0);
+INSERT INTO `jo_users` VALUES (923,'Zemian Deng','zemian','zemian@localhost','$2y$10$b8xBOJZkez9n9xhyOkRiCemDeCOF9BabNiSHtUcUS2qxeVpxeYPXm',0,0,'2020-09-18 12:52:12','0000-00-00 00:00:00','','{\"admin_style\":\"\",\"admin_language\":\"\",\"language\":\"\",\"editor\":\"\",\"helpsite\":\"\",\"timezone\":\"\"}','0000-00-00 00:00:00',0,'','',0);
 /*!40000 ALTER TABLE `jo_users` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3418,4 +3505,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-17 18:21:55
+-- Dump completed on 2020-09-18  9:37:26
